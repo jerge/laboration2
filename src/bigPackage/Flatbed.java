@@ -4,11 +4,11 @@ public interface Flatbed {
 
     double flatbed = 0;
 
-    void raiseFlatbed(double degrees);
+    void raiseFlatbed(double value);
 
-    void lowerFlatbed(double degrees);
+    void lowerFlatbed(double value);
 
     double getFlatbed();
 
-    boolean flatbedDown();
+    boolean isFlatbedDown();
 }

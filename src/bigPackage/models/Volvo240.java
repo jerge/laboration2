@@ -28,28 +28,8 @@ public class Volvo240 extends Car {
      * The calculated value depends on trim factor and engine power
      * @return the calculated acceleration rate
      */
-    private double speedFactor(){
+    protected double speedFactor(){
         return enginePower * 0.01 * trimFactor;
-    }
-
-    /**
-     * Increases the speed depending on amount and speed factor
-     * The new speed can not be increased above the engine power
-     * @param amount a value between 0 and 1, more increments more
-     */
-    @Override
-    protected void incrementSpeed(double amount){
-        currentSpeed = Math.min(getCurrentSpeed() + speedFactor() * amount,enginePower);
-    }
-
-    /**
-     * Decreases the speed depending on amount and speed factor
-     * The new speed can not be lowered below 0
-     * @param amount a value between 0 and 1, more decrements more
-     */
-    @Override
-    protected void decrementSpeed(double amount){
-        currentSpeed = Math.max(getCurrentSpeed() - speedFactor() * amount,0);
     }
 
 }

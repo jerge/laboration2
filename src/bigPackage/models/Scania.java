@@ -40,11 +40,13 @@ public class Scania extends Car implements Flatbed {
 
     /**
      * Lowers the flatbed by a specified amount, down to a minimum of 0 degrees
-     * @param degrees of degrees you want the flatbed to be lowered
+     * @param value of degrees you want the flatbed to be lowered
      */
-    public void lowerFlatbed(double degrees){
+    public void lowerFlatbed(double value){
         if(currentSpeed == 0){
-            flatbed = Math.max(flatbed-degrees,0);
+            flatbed = Math.max(flatbed - value,0);
+        } else {
+            throw new IllegalStateException("Can not lower flatbed while moving");
         }
     }
 
@@ -56,8 +58,8 @@ public class Scania extends Car implements Flatbed {
      * Checks if the flatbed is fully lowered
      * @return true if allowed to move
      */
-    public boolean flatbedDown(){
-        return flatbed == 0;
+    public boolean isFlatbedDown(){
+        return flatbed == 0.0;
     }
 
     /**
@@ -65,7 +67,7 @@ public class Scania extends Car implements Flatbed {
      * The calculated value depends on trim factor and engine power
      * @return the calculated acceleration rate
      */
-    private double speedFactor(){
+    protected double speedFactor(){
         return enginePower * 0.01 * trimFactor;
     }
 
@@ -76,21 +78,11 @@ public class Scania extends Car implements Flatbed {
      */
     @Override
     protected void incrementSpeed(double amount){
-        if(flatbedDown()) {
+        if(isFlatbedDown()) {
             currentSpeed = Math.min(getCurrentSpeed() + speedFactor() * amount, enginePower);
         }
         else{
             throw new IllegalArgumentException("Can't move when flatbed is not lowered");
         }
-    }
-
-    /**
-     * Decreases the speed depending on amount and speed factor
-     * The new speed can not be lowered below 0
-     * @param amount a value between 0 and 1, more decrements more
-     */
-    @Override
-    protected void decrementSpeed(double amount){
-        currentSpeed = Math.max(getCurrentSpeed() - speedFactor() * amount,0);
     }
 }
