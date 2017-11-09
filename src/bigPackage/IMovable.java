@@ -1,6 +1,6 @@
 package bigPackage;
 
-public interface Movable {
+public interface IMovable {
     /**
      * Changes the vehicle's current position according to it's speed and direction
      */

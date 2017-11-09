@@ -1,8 +1,10 @@
 package bigPackage;
 
+import sun.awt.util.IdentityLinkedList;
+
 import java.awt.*;
 
-public abstract class MotorisedVehicle implements Movable {
+public abstract class MotorisedVehicle implements IMovable {
 
     /**
      * Current speed of the vehicle
@@ -39,6 +41,8 @@ public abstract class MotorisedVehicle implements Movable {
      */
     protected double enginePower; // Engine power of the car
 
+    protected boolean onTransport = false;
+
     public String getModelName() {
         return modelName;
     }
@@ -54,7 +58,15 @@ public abstract class MotorisedVehicle implements Movable {
         return position;
     }
 
+    public void setPosition(double[] position) {
+        this.position = position;
+    }
+
     public double getDirection() { return direction; }
+
+    public void setDirection(double direction) {
+        this.direction = direction;
+    }
 
     /**
      * @return car's engine power in arbitrary form
@@ -62,7 +74,6 @@ public abstract class MotorisedVehicle implements Movable {
     public double getEnginePower(){
         return enginePower;
     }
-
 
     /**
      * @return color of the vehicle
@@ -76,6 +87,14 @@ public abstract class MotorisedVehicle implements Movable {
      */
     public void setColor(Color clr){
         color = clr;
+    }
+
+    public boolean isOnTransport() {
+        return onTransport;
+    }
+
+    public void setOnTransport(boolean onTransport) {
+        this.onTransport = onTransport;
     }
 
     public void stopEngine(){
@@ -142,8 +161,10 @@ public abstract class MotorisedVehicle implements Movable {
      * Calls the incrementSpeed() method from the subclass, depending on model name
      * @param amount is the value you want to increase your speed with
      */
-    public void gas(double amount){
-        if(amount > 0 && amount <= 1) {
+    public void gas(double amount) {
+        if (onTransport) {
+            throw new IllegalStateException("Can not drive while on a transport");
+        } else if(amount > 0 && amount <= 1) {
             incrementSpeed(amount);
         } else{
             throw new IllegalArgumentException("Gas only accepts values from 0-1");

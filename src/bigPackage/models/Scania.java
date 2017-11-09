@@ -1,40 +1,39 @@
 package bigPackage.models;
 
 import bigPackage.Car;
-import bigPackage.Flatbed;
+import bigPackage.IFlatbed;
+import bigPackage.Truck;
 
 import java.awt.*;
 
-public class Scania extends Car implements Flatbed {
+public class Scania extends Truck implements IFlatbed {
 
     /**
      * A fixed factor which affects your acceleration
      */
     private final static double trimFactor = 1.25;
-
-    /**
-     * The flatbeds current incline represented in degrees
-     */
-    private double flatbed;
+    private static double maxIncline = 70.0;
+    private double flatbedIncline;
 
     public Scania(){
         nrDoors = 2;
         color = Color.red;
         enginePower = 730;
         modelName = "Scania R 730";
-        flatbed = 0.0;
+        maxIncline = 70.0;
         stopEngine();
     }
 
     /**
-     * Raises the flatbed by a specified amount, up to a max of 70 degrees
-     * @param degrees of degrees you want the flatbed to be raised
+     * Raises the flatbed by a specified amount, up to a max of <i>maxIncline</i> degrees
+     * @param value of degrees you want the flatbed to be raised
      */
-    public void raiseFlatbed(double degrees){
+    public void raiseFlatbed(double value){
         if(currentSpeed == 0){
-            flatbed = Math.min(flatbed+degrees,70.0);
+            flatbedIncline = Math.min(flatbedIncline + value,maxIncline);
+            flatbedDown = (flatbedIncline == 0.0);
         } else {
-          throw new IllegalStateException("Can not raise flatbed while moving");
+            throw new IllegalStateException("Can not lower flatbed while moving");
         }
     }
 
@@ -44,22 +43,11 @@ public class Scania extends Car implements Flatbed {
      */
     public void lowerFlatbed(double value){
         if(currentSpeed == 0){
-            flatbed = Math.max(flatbed - value,0);
+            flatbedIncline = Math.max(flatbedIncline - value,0.0);
+            flatbedDown = (flatbedIncline == 0.0);
         } else {
             throw new IllegalStateException("Can not lower flatbed while moving");
         }
-    }
-
-    public double getFlatbed() {
-        return flatbed;
-    }
-
-    /**
-     * Checks if the flatbed is fully lowered
-     * @return true if allowed to move
-     */
-    public boolean isFlatbedDown(){
-        return flatbed == 0.0;
     }
 
     /**
@@ -69,20 +57,5 @@ public class Scania extends Car implements Flatbed {
      */
     protected double speedFactor(){
         return enginePower * 0.01 * trimFactor;
-    }
-
-    /**
-     * Increases the speed depending on amount and speed factor
-     * The new speed can not be increased above the engine power
-     * @param amount a value between 0 and 1, more increments more
-     */
-    @Override
-    protected void incrementSpeed(double amount){
-        if(isFlatbedDown()) {
-            currentSpeed = Math.min(getCurrentSpeed() + speedFactor() * amount, enginePower);
-        }
-        else{
-            throw new IllegalArgumentException("Can't move when flatbed is not lowered");
-        }
     }
 }

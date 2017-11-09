@@ -1,10 +1,10 @@
 package bigPackage.models;
 import bigPackage.Car;
-import bigPackage.Turbo;
+import bigPackage.ITurbo;
 
 import java.awt.*;
 
-public class Saab95 extends Car implements Turbo {
+public class Saab95 extends Car implements ITurbo {
 
     private boolean turboOn;
 

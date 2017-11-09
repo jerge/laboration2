@@ -1,6 +1,6 @@
 package bigPackage;
 
-public interface Turbo {
+public interface ITurbo {
     boolean turboOn = false;
 
     /**
