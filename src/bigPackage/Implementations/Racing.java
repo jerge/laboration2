@@ -1,5 +1,6 @@
-package bigPackage;
+package bigPackage.Implementations;
 
+import bigPackage.models.AbstractModels.Car;
 import bigPackage.models.Saab95;
 import bigPackage.models.Volvo240;
 

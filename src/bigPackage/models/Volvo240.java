@@ -1,9 +1,12 @@
 package bigPackage.models;
 
-import bigPackage.Car;
+import bigPackage.models.AbstractModels.Car;
 
 import java.awt.*;
 
+/**
+ * The type Volvo 240.
+ */
 public class Volvo240 extends Car {
 
     /**

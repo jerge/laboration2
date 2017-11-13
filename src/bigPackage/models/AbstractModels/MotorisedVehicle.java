@@ -1,9 +1,12 @@
-package bigPackage;
+package bigPackage.models.AbstractModels;
 
-import sun.awt.util.IdentityLinkedList;
+import bigPackage.Interfaces.IMovable;
 
 import java.awt.*;
 
+/**
+ * The type Motorised vehicle.
+ */
 public abstract class MotorisedVehicle implements IMovable {
 
     /**
@@ -20,7 +23,7 @@ public abstract class MotorisedVehicle implements IMovable {
     /**
      * The vehicle's model name
      */
-    protected String modelName;
+    protected static String modelName;
 
     /**
      * The position of the vehicle in the universe
@@ -39,43 +42,77 @@ public abstract class MotorisedVehicle implements IMovable {
      * Current engine power of the car
      * Calculated with an arbitrary unit
      */
-    protected double enginePower; // Engine power of the car
+    protected static double enginePower; // Engine power of the car
 
-    protected boolean onTransport = false;
+    /**
+     * True if the vehicle is currently loaded on a transport
+     */
+    private boolean onTransport = false;
 
+    /**
+     * Gets model name.
+     *
+     * @return the model name
+     */
     public String getModelName() {
         return modelName;
     }
 
     /**
+     * Get current speed.
+     *
      * @return current speed in arbitrary units
      */
     public double getCurrentSpeed(){
         return currentSpeed;
     }
 
+    /**
+     * Get position double [ ].
+     *
+     * @return The double [ ] position in the universe
+     */
     public double[] getPosition(){
         return position;
     }
 
+    /**
+     * Sets position.
+     *
+     * @param position the position
+     */
     public void setPosition(double[] position) {
         this.position = position;
     }
 
+    /**
+     * Gets direction.
+     *
+     * @return the direction
+     */
     public double getDirection() { return direction; }
 
+    /**
+     * Sets direction.
+     *
+     * @param direction the direction
+     */
     public void setDirection(double direction) {
         this.direction = direction;
     }
 
     /**
-     * @return car's engine power in arbitrary form
+     * Get engine power.
+     *
+     * @return Motorised Vehicle's engine power in arbitrary form
      */
     public double getEnginePower(){
         return enginePower;
     }
 
     /**
+     * Get color.
+     *
      * @return color of the vehicle
      */
     public Color getColor(){
@@ -83,24 +120,42 @@ public abstract class MotorisedVehicle implements IMovable {
     }
 
     /**
+     * Set color.
+     *
      * @param clr the color to set
      */
     public void setColor(Color clr){
         color = clr;
     }
 
+    /**
+     * Is on transport boolean.
+     *
+     * @return the boolean
+     */
     public boolean isOnTransport() {
         return onTransport;
     }
 
+    /**
+     * Sets on transport.
+     *
+     * @param onTransport the on transport
+     */
     public void setOnTransport(boolean onTransport) {
         this.onTransport = onTransport;
     }
 
+    /**
+     * Stop engine.
+     */
     public void stopEngine(){
         currentSpeed = 0;
     }
 
+    /**
+     * Start engine.
+     */
     public void startEngine(){
         currentSpeed = 0.1;
     }
@@ -136,12 +191,14 @@ public abstract class MotorisedVehicle implements IMovable {
     /**
      * Calculates the acceleration rate of the car
      * The calculated value depends on turbo's state and engine power
+     *
      * @return the calculated acceleration rate
      */
     protected abstract double speedFactor();
 
     /**
      * Abstract method that increments speed depending on amount and model type
+     *
      * @param amount a value between 0 and 1, more increments more
      */
     protected void incrementSpeed(double amount){
@@ -151,6 +208,7 @@ public abstract class MotorisedVehicle implements IMovable {
     /**
      * Decreases the speed depending on amount and speed factor
      * The new speed can not be lowered below 0
+     *
      * @param amount a value between 0 and 1, more decrements more
      */
     protected void decrementSpeed(double amount){
@@ -159,6 +217,7 @@ public abstract class MotorisedVehicle implements IMovable {
 
     /**
      * Calls the incrementSpeed() method from the subclass, depending on model name
+     *
      * @param amount is the value you want to increase your speed with
      */
     public void gas(double amount) {
@@ -173,6 +232,7 @@ public abstract class MotorisedVehicle implements IMovable {
 
     /**
      * Calls the decrementSpeed() method from the subclass, depending on model name
+     *
      * @param amount is the value you want to increase your speed with
      */
     public void brake(double amount){

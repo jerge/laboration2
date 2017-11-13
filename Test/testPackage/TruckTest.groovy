@@ -1,12 +1,9 @@
 package testPackage
 
-import bigPackage.Car
 import bigPackage.models.Scania
 
 //import bigPackage.models.Saab95
 //import bigPackage.models.Volvo240
-
-import java.awt.*
 import static java.lang.System.out;
 import org.testng.annotations.Test
 

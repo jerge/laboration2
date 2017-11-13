@@ -1,6 +1,6 @@
 package testPackage
 
-import bigPackage.Car
+import bigPackage.models.AbstractModels.Car
 import bigPackage.models.Saab95
 import bigPackage.models.Volvo240
 

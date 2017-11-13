@@ -1,53 +1,55 @@
 package bigPackage.models;
 
-import bigPackage.Car;
-import bigPackage.IFlatbed;
-import bigPackage.Truck;
+import bigPackage.Accessories.GradualFlatbed;
+import bigPackage.Interfaces.IHasFlatbed;
+import bigPackage.models.AbstractModels.Truck;
 
 import java.awt.*;
 
-public class Scania extends Truck implements IFlatbed {
+/**
+ * The type Scania.
+ */
+public class Scania extends Truck implements IHasFlatbed {
 
     /**
      * A fixed factor which affects your acceleration
      */
     private final static double trimFactor = 1.25;
-    private static double maxIncline = 70.0;
-    private double flatbedIncline;
 
+    private GradualFlatbed flatbed;
+
+    /**
+     * Instantiates a new Scania.
+     */
     public Scania(){
         nrDoors = 2;
         color = Color.red;
         enginePower = 730;
         modelName = "Scania R 730";
-        maxIncline = 70.0;
+        flatbed = new GradualFlatbed(70.0);
         stopEngine();
+    }
+
+    public GradualFlatbed getFlatbed(){
+        return flatbed;
     }
 
     /**
      * Raises the flatbed by a specified amount, up to a max of <i>maxIncline</i> degrees
+     *
      * @param value of degrees you want the flatbed to be raised
      */
     public void raiseFlatbed(double value){
-        if(currentSpeed == 0){
-            flatbedIncline = Math.min(flatbedIncline + value,maxIncline);
-            flatbedDown = (flatbedIncline == 0.0);
-        } else {
-            throw new IllegalStateException("Can not lower flatbed while moving");
-        }
+        flatbed.raiseFlatbed(currentSpeed,value);
     }
 
     /**
      * Lowers the flatbed by a specified amount, down to a minimum of 0 degrees
+     *
      * @param value of degrees you want the flatbed to be lowered
      */
     public void lowerFlatbed(double value){
-        if(currentSpeed == 0){
-            flatbedIncline = Math.max(flatbedIncline - value,0.0);
-            flatbedDown = (flatbedIncline == 0.0);
-        } else {
-            throw new IllegalStateException("Can not lower flatbed while moving");
-        }
+        flatbed.lowerFlatbed(currentSpeed,value);
     }
 
     /**
@@ -56,6 +58,6 @@ public class Scania extends Truck implements IFlatbed {
      * @return the calculated acceleration rate
      */
     protected double speedFactor(){
-        return enginePower * 0.01 * trimFactor;
+        return (enginePower * 0.01 * trimFactor);
     }
 }

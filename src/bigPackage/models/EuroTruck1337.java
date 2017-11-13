@@ -1,14 +1,17 @@
 package bigPackage.models;
 
-import bigPackage.Car;
-import bigPackage.CargoHold;
-import bigPackage.ICarTransport;
-import bigPackage.Truck;
+import bigPackage.Accessories.Flatbed;
+import bigPackage.models.AbstractModels.Car;
+import bigPackage.Accessories.CargoHold;
+import bigPackage.Interfaces.ICarTransport;
+import bigPackage.models.AbstractModels.Truck;
 
 import java.awt.*;
-import java.util.ArrayDeque;
 import java.util.Deque;
 
+/**
+ * The type Euro truck 1337.
+ */
 public class EuroTruck1337 extends Truck implements ICarTransport{
 
     /**
@@ -17,15 +20,30 @@ public class EuroTruck1337 extends Truck implements ICarTransport{
     private final static double trimFactor = 1.25;
     private final double range = 5;
     private final int capacity = 10;
-    private CargoHold cargo = new CargoHold(true, range, capacity);
+    /**
+     * The truck's Flatbed
+     */
+    private Flatbed flatbed;
+    /**
+     * The truck's CargoHold
+     */
+    private CargoHold cargo;
 
-
+    /**
+     * Instantiates a new Euro truck 1337.
+     */
     public EuroTruck1337(){
         nrDoors = 2;
         color = Color.red;
         enginePower = 1337;
-        modelName = "EuroTruck1337";
+        modelName = "Euro Truck 1337";
+        flatbed = new Flatbed();
+        cargo = new CargoHold(true, range, capacity);
         stopEngine();
+    }
+
+    public Flatbed getFlatbed(){
+        return flatbed;
     }
 
     public double getRange(){
@@ -38,6 +56,7 @@ public class EuroTruck1337 extends Truck implements ICarTransport{
 
     /**
      * Uses Pythagoras Theorem to check if the <i>vehicle</i> is within range
+     *
      * @param c the vehicle to check
      * @return True if the vehicle is in range of the current object
      */
@@ -54,6 +73,9 @@ public class EuroTruck1337 extends Truck implements ICarTransport{
         return cargo.unload(isFlatbedDown());
     }
 
+    /**
+     * Syncs state for all cars in cargo when truck moves
+     */
     @Override
     public void move(){
         super.move();

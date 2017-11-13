@@ -1,9 +1,12 @@
 package bigPackage.models;
-import bigPackage.Car;
-import bigPackage.ITurbo;
+import bigPackage.models.AbstractModels.Car;
+import bigPackage.Interfaces.ITurbo;
 
 import java.awt.*;
 
+/**
+ * The type Saab 95.
+ */
 public class Saab95 extends Car implements ITurbo {
 
     private boolean turboOn;
@@ -18,6 +21,15 @@ public class Saab95 extends Car implements ITurbo {
         turboOn = false;
         modelName = "Saab95";
         stopEngine();
+    }
+
+    /**
+     * Is turbo on boolean.
+     *
+     * @return the boolean
+     */
+    public boolean isTurboOn() {
+        return turboOn;
     }
 
     /**
