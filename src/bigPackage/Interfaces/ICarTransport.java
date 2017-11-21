@@ -1,12 +1,12 @@
 package bigPackage.Interfaces;
 
-import bigPackage.models.AbstractModels.Car;
+import bigPackage.Accessories.CargoHold;
+import bigPackage.models.AbstractModels.ACar;
 
 /**
- * The interface Car transport.
+ * The interface ACar transport.
  */
 public interface ICarTransport {
-//    Deque<Car> cargo = new ArrayDeque<>();
 
     /**
      * Loads car onto transporter's cargo.
@@ -14,15 +14,14 @@ public interface ICarTransport {
      * @param c the c
      * @return True if load was successful
      */
-//    boolean isWithinRange(Car c);
-    boolean load(Car c);
+    boolean load(ACar c);
 
     /**
      * Unload car from transporter's cargo.
      *
      * @return the car unloaded
      */
-    Car unload();
+    ACar unload();
 
     /**
      * Gets range.
@@ -37,6 +36,13 @@ public interface ICarTransport {
      * @return the capacity
      */
     int getCapacity();
+
+    /**
+     * Gets cargo.
+     *
+     * @return the Cargo
+     */
+    CargoHold getCargoHold();
 
 
 }

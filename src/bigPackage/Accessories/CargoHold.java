@@ -1,9 +1,8 @@
 package bigPackage.Accessories;
 
 
-
-import bigPackage.models.AbstractModels.Car;
-import bigPackage.models.AbstractModels.MotorisedVehicle;
+import bigPackage.models.AbstractModels.ACar;
+import bigPackage.models.AbstractModels.AMotorisedVehicle;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -26,9 +25,9 @@ public class CargoHold {
      */
     private boolean filo;
     /**
-     * The list for the cargo
+     * The list for the cargos
      */
-    private Deque cargo;
+    private Deque<ACar> cargos;
 
 
     /**
@@ -38,20 +37,20 @@ public class CargoHold {
      * @param range    the range
      * @param capacity the capacity
      */
-    public CargoHold(boolean filo, double range, int capacity){
+    public CargoHold( boolean filo, double range, int capacity ) {
         this.range = range;
         this.capacity = capacity;
         this.filo = filo;
-        cargo = new ArrayDeque<Car>(capacity);
+        cargos = new ArrayDeque<>( capacity );
     }
 
     /**
-     * Gets cargo.
+     * Gets cargos.
      *
-     * @return the cargo
+     * @return the cargos
      */
-    public Deque getCargo() {
-        return cargo;
+    public Deque<ACar> getCargos() {
+        return cargos;
     }
 
     /**
@@ -61,9 +60,9 @@ public class CargoHold {
      * @param tp the transporter
      * @return True if the vehicle is in range of the current object
      */
-    public boolean isWithinRange(Car c, MotorisedVehicle tp ){
-        return Math.sqrt(Math.pow(c.getPosition()[0] - tp.getPosition()[0],2) +
-                (Math.pow(c.getPosition()[1] - tp.getPosition()[1],2))) <= range;
+    private boolean isWithinRange( ACar c, AMotorisedVehicle tp ) {
+        return Math.sqrt( Math.pow( c.getPosition()[0] - tp.getPosition()[0], 2 ) +
+                ( Math.pow( c.getPosition()[1] - tp.getPosition()[1], 2 ) ) ) <= range;
     }
 
     /**
@@ -74,13 +73,13 @@ public class CargoHold {
      * @param iFD if the flatbed is down
      * @return True if the load was successful
      */
-    public boolean load(Car c, MotorisedVehicle tp, boolean iFD){
-        if (isWithinRange(c,tp)
+    public boolean load( ACar c, AMotorisedVehicle tp, boolean iFD ) {
+        if ( isWithinRange( c, tp )
                 && !c.isOnTransport()
-                && capacity >= cargo.size()
+                && capacity >= cargos.size()
                 && iFD
-                && c != tp){
-            addToCargo(c,tp);
+                && c != tp ) {
+            addToCargo( c, tp );
             return true;
         }
         return false;
@@ -88,14 +87,15 @@ public class CargoHold {
 
     /**
      * Help method
-     * @param c Car to load
+     *
+     * @param c  ACar to load
      * @param tp Transporter to load onto
      */
-    private void addToCargo(Car c, MotorisedVehicle tp){
-        syncState(c,tp);
+    private void addToCargo( ACar c, AMotorisedVehicle tp ) {
+        syncState( c, tp );
         c.stopEngine();
-        c.setOnTransport(true);
-        cargo.add(c);
+        c.setOnTransport( true );
+        cargos.add( c );
     }
 
     /**
@@ -104,17 +104,17 @@ public class CargoHold {
      * @param iFD if the flatbed is down
      * @return the unloaded car
      */
-    public Car unload(boolean iFD){
-        if (!iFD){
+    public ACar unload( boolean iFD ) {
+        if ( !iFD ) {
             return null;
         }
-        Car c;
-        if (filo) {
-            c = (Car)cargo.pollLast();
+        ACar c;
+        if ( filo ) {
+            c = cargos.pollLast();
         } else {
-            c = (Car)cargo.pollFirst();
+            c = cargos.pollFirst();
         }
-        c.setOnTransport(false);
+        c.setOnTransport( false );
         return c;
     }
 
@@ -124,8 +124,8 @@ public class CargoHold {
      * @param c  the car
      * @param tp the transporter
      */
-    public void syncState(Car c, MotorisedVehicle tp){
-        c.setPosition(tp.getPosition());
-        c.setDirection(tp.getDirection());
+    public void syncState( ACar c, AMotorisedVehicle tp ) {
+        c.setPosition( tp.getPosition().clone() );
+        c.setDirection( tp.getDirection() );
     }
 }

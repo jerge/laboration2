@@ -29,7 +29,7 @@ public interface IHasFlatbed {
      *
      * @return the flatbed
      */
-    Flatbed getFlatbed();
+    <T extends Flatbed> T getFlatbed();
 
     /**
      * Gets max incline.

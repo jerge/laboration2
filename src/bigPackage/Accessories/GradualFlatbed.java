@@ -10,8 +10,8 @@ public class GradualFlatbed extends Flatbed {
      *
      * @param maxIncline the max incline
      */
-    public GradualFlatbed(double maxIncline){
-        this.maxIncline = maxIncline;
+    public GradualFlatbed( double maxIncline ) {
+        super( maxIncline );
     }
 
     /**
@@ -20,12 +20,12 @@ public class GradualFlatbed extends Flatbed {
      * @param currentSpeed the current speed of the transporter
      * @param value        of degrees you want the flatbed to be raised
      */
-    public void raiseFlatbed(double currentSpeed, double value){
-        if(currentSpeed == 0){
-            flatbedIncline = Math.min(flatbedIncline + value,maxIncline);
-            flatbedDown = (flatbedIncline == 0.0);
+    public void raiseFlatbed( double currentSpeed, double value ) {
+        if ( currentSpeed == 0 ) {
+            setFlatbedIncline( Math.min( getFlatbedIncline() + value, getMaxIncline() ) );
+            setFlatbedDown( getFlatbedIncline() == 0.0 );
         } else {
-            throw new IllegalStateException("Can not lower flatbed while moving");
+            throw new IllegalStateException( "Can not lower flatbed while moving" );
         }
     }
 
@@ -35,12 +35,12 @@ public class GradualFlatbed extends Flatbed {
      * @param currentSpeed the current speed of the transporter
      * @param value        of degrees you want the flatbed to be lowered
      */
-    public void lowerFlatbed(double currentSpeed, double value){
-        if(currentSpeed == 0){
-            flatbedIncline = Math.max(flatbedIncline - value,0.0);
-            flatbedDown = (flatbedIncline == 0.0);
+    public void lowerFlatbed( double currentSpeed, double value ) {
+        if ( currentSpeed == 0 ) {
+            setFlatbedIncline( Math.max( getFlatbedIncline() - value, 0.0 ) );
+            setFlatbedDown( getFlatbedIncline() == 0.0 );
         } else {
-            throw new IllegalStateException("Can not lower flatbed while moving");
+            throw new IllegalStateException( "Can not lower flatbed while moving" );
         }
     }
 }

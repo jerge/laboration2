@@ -4,45 +4,46 @@ import bigPackage.Accessories.CargoHold;
 import bigPackage.Accessories.Flatbed;
 import bigPackage.Interfaces.ICarTransport;
 import bigPackage.Interfaces.IHasFlatbed;
-import bigPackage.models.AbstractModels.Car;
-import bigPackage.models.AbstractModels.MotorisedVehicle;
+import bigPackage.models.AbstractModels.ACar;
+import bigPackage.models.AbstractModels.AMotorisedVehicle;
 
 import java.awt.*;
-import java.util.Deque;
 
 /**
  * The type Ferry master 420.
  */
-public class FerryMaster420 extends MotorisedVehicle implements ICarTransport, IHasFlatbed {
+public class FerryMaster420 extends AMotorisedVehicle implements ICarTransport, IHasFlatbed {
 
-    private final static double trimFactor = 25;
+    private final double trimFactor = 25;
     private final double range = 20;
     private final int capacity = 100;
     private Flatbed flatbed;
-    private CargoHold cargo;
+    private CargoHold cargoHold;
 
     /**
      * Instantiates a new Ferry master 420.
      */
     public FerryMaster420() {
-        color = Color.green;
-        enginePower = 420;
-        modelName = "Ferry Master 420";
+        super( Color.green, 420, "Ferry NoobLord 420" );
         flatbed = new Flatbed();
-        cargo = new CargoHold(false, range, capacity);
+        cargoHold = new CargoHold( false, range, capacity );
         stopEngine();
     }
 
-    public Flatbed getFlatbed(){
+    public Flatbed getFlatbed() {
         return flatbed;
     }
 
-    public double getRange(){
+    public double getRange() {
         return range;
     }
 
-    public int getCapacity(){
+    public int getCapacity() {
         return capacity;
+    }
+
+    public CargoHold getCargoHold() {
+        return cargoHold;
     }
 
     public double getFlatbedIncline() {
@@ -58,40 +59,39 @@ public class FerryMaster420 extends MotorisedVehicle implements ICarTransport, I
     }
 
     public void raiseFlatbed() {
-        flatbed.raiseFlatbed(currentSpeed);
+        flatbed.raiseFlatbed( getCurrentSpeed() );
     }
 
     public void lowerFlatbed() {
-        flatbed.lowerFlatbed(currentSpeed);
+        flatbed.lowerFlatbed( getCurrentSpeed() );
     }
 
-    public boolean load(Car c){
-        return cargo.load(c,this,isFlatbedDown());
+    public boolean load( ACar c ) {
+        return cargoHold.load( c, this, isFlatbedDown() );
     }
 
-    public Car unload(){
-        return cargo.unload(isFlatbedDown());
+    public ACar unload() {
+        return cargoHold.unload( isFlatbedDown() );
     }
 
-    protected double speedFactor(){
-        return enginePower * 0.01 * trimFactor;
-    }
-
-    @Override
-    protected void incrementSpeed(double amount){
-        if(isFlatbedDown()) {
-            super.incrementSpeed(amount);
-        }
-        else{
-            throw new IllegalArgumentException("Can't move when flatbed is not lowered");
-        }
+    protected double speedFactor() {
+        return getEnginePower() * 0.01 * trimFactor;
     }
 
     @Override
-    public void move(){
+    protected void incrementSpeed( double amount ) {
+        if ( isFlatbedDown() ) {
+            super.incrementSpeed( amount );
+        } else {
+            throw new IllegalArgumentException( "Can't move when flatbed is not lowered" );
+        }
+    }
+
+    @Override
+    public void move() {
         super.move();
-        for (Car c : (Deque<Car>)cargo.getCargo()) {
-            cargo.syncState(c,this);
+        for ( ACar c : cargoHold.getCargos() ) {
+            cargoHold.syncState( c, this );
         }
     }
 
