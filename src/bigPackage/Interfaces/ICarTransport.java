@@ -12,9 +12,8 @@ public interface ICarTransport {
      * Loads car onto transporter's cargo.
      *
      * @param c the c
-     * @return True if load was successful
      */
-    boolean load(ACar c);
+    void load(ACar c);
 
     /**
      * Unload car from transporter's cargo.

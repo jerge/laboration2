@@ -71,18 +71,15 @@ public class CargoHold {
      * @param c   the car to load
      * @param tp  the transporter
      * @param iFD if the flatbed is down
-     * @return True if the load was successful
      */
-    public boolean load( ACar c, AMotorisedVehicle tp, boolean iFD ) {
+    public void load( ACar c, AMotorisedVehicle tp, boolean iFD ) {
         if ( isWithinRange( c, tp )
                 && !c.isOnTransport()
                 && capacity >= cargos.size()
                 && iFD
                 && c != tp ) {
             addToCargo( c, tp );
-            return true;
         }
-        return false;
     }
 
     /**

@@ -11,6 +11,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
 import javax.imageio.ImageIO;
@@ -23,9 +24,9 @@ public class DrawPanel extends JPanel {
     // Just a single image, TODO: Generalize
     // To keep track of a single ACars position
     private Map<String, BufferedImage> modelNameImgMap = new HashMap<>();
-    private ArrayList<ACar> carList;
+    private List<ACar> carList;
 
-    private void createCars( ArrayList<ACar> list ) {
+    private void createCars( List<ACar> list ) {
         carList = list;
         for ( ACar car : list ) {
             if ( !modelNameImgMap.containsKey( car.getModelName() ) ) {
@@ -47,7 +48,7 @@ public class DrawPanel extends JPanel {
     //    }
 
     // Initializes the panel and reads the images
-    public DrawPanel( int x, int y, ArrayList<ACar> carList ) {
+    public DrawPanel( int x, int y, List<ACar> carList ) {
         this.setDoubleBuffered( true );
         this.setPreferredSize( new Dimension( x, y ) );
         this.setBackground( Color.green );

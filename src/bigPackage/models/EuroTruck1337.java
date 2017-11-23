@@ -54,8 +54,8 @@ public class EuroTruck1337 extends ATruck implements ICarTransport {
         return cargoHold;
     }
 
-    public boolean load( ACar c ) {
-        return cargoHold.load( c, this, isFlatbedDown() );
+    public void load( ACar c ) {
+        cargoHold.load( c, this, isFlatbedDown() );
     }
 
     public ACar unload() {
