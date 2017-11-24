@@ -45,7 +45,7 @@ public class CarController {
         carList.add( new Volvo240() );
 
         CarController cc = new CarController( carList );
-        cc.frame = new CarView( "CarSim 1.0", cc, cc.getCarList() );
+        cc.frame = new CarView( "CarSim 1.0", cc.getCarList() );
         cc.startListen();
         cc.startTimer();
 
@@ -53,7 +53,6 @@ public class CarController {
 
     private CarController( List<ACar> carList ) {
         initCars( carList );
-
     }
 
     private void startTimer() {

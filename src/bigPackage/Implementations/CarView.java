@@ -43,10 +43,9 @@ public class CarView extends JFrame {
     JButton stopButton = new JButton( "Stop all ACars" );
 
     // Constructor
-    public CarView( String framename, CarController cc, List<ACar> carList ) {
-        this.carC = cc;
+    public CarView( String framename, List<ACar> carList ) {
         drawPanel = new DrawPanel( ( X ), Y - 240, carList );
-        initComponents( framename, cc );
+        initComponents( framename);
     }
 
     public static int getMaxX() {
@@ -59,7 +58,7 @@ public class CarView extends JFrame {
 
     // Sets everything in place and fits everything
     // TODO: Take a good look and make sure you understand how these methods and components work
-    private void initComponents( String title, CarController cc ) {
+    private void initComponents( String title ) {
 
         this.setTitle( title );
         this.setPreferredSize( new Dimension( X, Y ) );
