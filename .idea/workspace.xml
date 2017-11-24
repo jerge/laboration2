@@ -147,78 +147,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="EuroTruck1337.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bigPackage/models/EuroTruck1337.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="56" column="14" lean-forward="false" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ATruck.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bigPackage/models/AbstractModels/ATruck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IHasFlatbed.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bigPackage/Interfaces/IHasFlatbed.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FerryMaster420.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bigPackage/models/FerryMaster420.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1371#1372#0" expanded="true" />
-                <element signature="e#1417#1418#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CargoHold.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bigPackage/Accessories/CargoHold.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="42" column="25" lean-forward="true" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CarController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/bigPackage/Implementations/CarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-727">
-              <caret line="81" column="24" lean-forward="false" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
+            <state relative-caret-position="294">
+              <caret line="53" column="49" lean-forward="true" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1536#1537#0" expanded="true" />
-                <element signature="e#1564#1565#0" expanded="true" />
+                <element signature="e#1809#2080#0" expanded="true" />
+                <element signature="e#2079#2080#0" expanded="true" />
+                <element signature="e#2282#2283#0" expanded="true" />
+                <element signature="e#2336#2337#0" expanded="true" />
+                <element signature="e#2498#2499#0" expanded="true" />
+                <element signature="e#2554#2555#0" expanded="true" />
+                <element signature="e#2715#2716#0" expanded="true" />
+                <element signature="e#2759#2760#0" expanded="true" />
+                <element signature="e#2921#2922#0" expanded="true" />
+                <element signature="e#2966#2967#0" expanded="true" />
+                <element signature="e#3130#3131#0" expanded="true" />
+                <element signature="e#3174#3175#0" expanded="true" />
+                <element signature="e#3339#3340#0" expanded="true" />
+                <element signature="e#3384#3385#0" expanded="true" />
+                <element signature="e#3548#3549#0" expanded="true" />
+                <element signature="e#3594#3595#0" expanded="true" />
+                <element signature="e#3759#3760#0" expanded="true" />
+                <element signature="e#3805#3806#0" expanded="true" />
+                <element signature="e#3862#3863#0" expanded="true" />
+                <element signature="e#3890#3891#0" expanded="true" />
+                <element signature="e#4611#4676#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TimerTask.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/TimerTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-811">
+              <caret line="85" column="14" lean-forward="false" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -226,329 +193,8 @@
       <file leaf-file-name="DrawPanel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bigPackage/Implementations/DrawPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1289">
-              <caret line="83" column="32" lean-forward="true" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JAVA/bigPackage" pinned="false" current-in-tab="false">
-        <entry file="uml://JAVA/bigPackage">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>bigPackage</OriginalElement>
-              <nodes>
-                <node x="1033.8384570896474" y="378.0">bigPackage.Implementations.DrawPanel</node>
-                <node x="565.0384570896473" y="484.0">bigPackage.models.Scania</node>
-                <node x="55.42179042298068" y="86.0">bigPackage.models.AbstractModels.AMotorisedVehicle</node>
-                <node x="890.8384570896474" y="378.0">bigPackage.models.Volvo240</node>
-                <node x="87.42179042298068" y="0.0">bigPackage.Interfaces.IMovable</node>
-                <node x="973.85929260334" y="716.0">bigPackage.Implementations.CarController.TimerListener</node>
-                <node x="697.8384570896474" y="378.0">bigPackage.Interfaces.ITurbo</node>
-                <node x="820.85929260334" y="630.0">bigPackage.Implementations.CarController</node>
-                <node x="773.8384570896474" y="172.0">bigPackage.models.AbstractModels.ACar</node>
-                <node x="613.8384570896474" y="172.0">bigPackage.Interfaces.IHasFlatbed</node>
-                <node x="305.83845708964736" y="630.0">bigPackage.models.EuroTruck1337</node>
-                <node x="0.0" y="630.0">bigPackage.models.FerryMaster420</node>
-                <node x="510.33845708964736" y="378.0">bigPackage.Accessories.GradualFlatbed</node>
-                <node x="157.33845708964736" y="484.0">bigPackage.Interfaces.ICarTransport</node>
-                <node x="295.33845708964736" y="172.0">bigPackage.Accessories.Flatbed</node>
-                <node x="383.33845708964736" y="378.0">bigPackage.models.AbstractModels.ATruck</node>
-                <node x="737.8384570896474" y="484.0">bigPackage.models.Saab95</node>
-                <node x="145.22357386881163" y="378.0">bigPackage.Accessories.CargoHold</node>
-                <node x="1042.3384570896474" y="484.0">bigPackage.Implementations.CarView</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="bigPackage.models.FerryMaster420" target="bigPackage.models.AbstractModels.AMotorisedVehicle">
-                  <point x="-72.89999999999992" y="-18.0" />
-                  <point x="8.10000000000008" y="600.0" />
-                  <point x="21.3839554625265" y="600.0" />
-                  <point x="21.3839554625265" y="147.0" />
-                  <point x="86.5884570896473" y="147.0" />
-                  <point x="-62.33333333333337" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.AbstractModels.ACar" target="bigPackage.models.AbstractModels.AMotorisedVehicle">
-                  <point x="0.0" y="-18.0" />
-                  <point x="820.3384570896474" y="147.0" />
-                  <point x="211.25512375631405" y="147.0" />
-                  <point x="62.33333333333334" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.CarView" target="bigPackage.Implementations.CarController">
-                  <point x="23.0" y="18.0" />
-                  <point x="1122.8384570896474" y="600.0" />
-                  <point x="963.0865653306128" y="600.0" />
-                  <point x="67.72727272727275" y="-18.0" />
-                </edge>
-                <edge source="bigPackage.models.AbstractModels.ATruck" target="bigPackage.models.AbstractModels.ACar">
-                  <point x="26.5" y="-18.0" />
-                  <point x="462.83845708964736" y="348.0" />
-                  <point x="806.030764781955" y="348.0" />
-                  <point x="-14.307692307692264" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.CarController" target="bigPackage.models.Scania">
-                  <point x="-67.72727272727275" y="-18.0" />
-                  <point x="827.6320198760673" y="610.0" />
-                  <point x="617.0384570896473" y="610.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.AbstractModels.AMotorisedVehicle" target="bigPackage.Interfaces.IMovable">
-                  <point x="0.0" y="-18.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.Scania" target="bigPackage.Accessories.GradualFlatbed">
-                  <point x="20.799999999999955" y="-18.0" />
-                  <point x="637.8384570896472" y="464.0" />
-                  <point x="646.1717904229807" y="464.0" />
-                  <point x="54.33333333333337" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.FerryMaster420" target="bigPackage.Interfaces.ICarTransport">
-                  <point x="72.89999999999998" y="-18.0" />
-                  <point x="153.89999999999998" y="610.0" />
-                  <point x="194.83845708964736" y="610.0" />
-                  <point x="-37.5" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.FerryMaster420" target="bigPackage.Accessories.Flatbed">
-                  <point x="-40.49999999999994" y="-18.0" />
-                  <point x="40.50000000000006" y="610.0" />
-                  <point x="43.3839554625265" y="610.0" />
-                  <point x="43.3839554625265" y="268.0" />
-                  <point x="319.12417137536164" y="268.0" />
-                  <point x="-31.714285714285722" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Interfaces.ICarTransport" target="bigPackage.Accessories.CargoHold">
-                  <point x="-37.5" y="-18.0" />
-                  <point x="194.83845708964736" y="464.0" />
-                  <point x="212.22357386881163" y="464.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.CarController.TimerListener" target="bigPackage.Implementations.CarController">
-                  <point x="-56.25" y="-18.0" />
-                  <point x="992.60929260334" y="696.0" />
-                  <point x="858.10929260334" y="696.0" />
-                  <point x="-37.25" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Accessories.CargoHold" target="bigPackage.models.AbstractModels.ACar">
-                  <point x="0.0" y="-18.0" />
-                  <point x="212.22357386881163" y="318.0" />
-                  <point x="784.5692263204166" y="318.0" />
-                  <point x="-35.76923076923072" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.CarController.TimerListener" target="bigPackage.models.AbstractModels.ACar">
-                  <point x="56.25" y="-18.0" />
-                  <point x="1105.10929260334" y="696.0" />
-                  <point x="1176.3384570896474" y="696.0" />
-                  <point x="1176.3384570896474" y="228.0" />
-                  <point x="863.2615340127243" y="228.0" />
-                  <point x="42.923076923076906" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.EuroTruck1337" target="bigPackage.models.AbstractModels.ACar">
-                  <point x="70.22222222222223" y="-18.0" />
-                  <point x="455.0606793118696" y="610.0" />
-                  <point x="499.83845708964736" y="610.0" />
-                  <point x="499.83845708964736" y="358.0" />
-                  <point x="813.1846109358012" y="358.0" />
-                  <point x="-7.153846153846189" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.FerryMaster420" target="bigPackage.Accessories.CargoHold">
-                  <point x="40.5" y="-18.0" />
-                  <point x="121.5" y="600.0" />
-                  <point x="135.83845708964736" y="600.0" />
-                  <point x="135.83845708964736" y="444.0" />
-                  <point x="173.93785958309735" y="444.0" />
-                  <point x="-38.28571428571428" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.CarController" target="bigPackage.models.AbstractModels.ACar">
-                  <point x="0.0" y="-18.0" />
-                  <point x="895.35929260334" y="560.0" />
-                  <point x="880.3384570896474" y="560.0" />
-                  <point x="880.3384570896474" y="278.0" />
-                  <point x="834.6461493973395" y="278.0" />
-                  <point x="14.307692307692264" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.DrawPanel" target="bigPackage.Interfaces.IHasFlatbed">
-                  <point x="-44.0" y="-18.0" />
-                  <point x="1055.8384570896474" y="258.0" />
-                  <point x="739.8384570896474" y="258.0" />
-                  <point x="56.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Accessories.CargoHold" target="bigPackage.models.AbstractModels.AMotorisedVehicle">
-                  <point x="-44.666666666666686" y="-18.0" />
-                  <point x="167.55690720214494" y="248.0" />
-                  <point x="148.92179042298068" y="248.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.CarView" target="bigPackage.Implementations.DrawPanel">
-                  <point x="28.75" y="-18.0" />
-                  <point x="1128.5884570896474" y="464.0" />
-                  <point x="1132.8384570896474" y="464.0" />
-                  <point x="33.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.Saab95" target="bigPackage.Interfaces.ITurbo">
-                  <point x="-27.5" y="-18.0" />
-                  <point x="765.3384570896474" y="464.0" />
-                  <point x="775.8384570896474" y="464.0" />
-                  <point x="26.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.Scania" target="bigPackage.models.AbstractModels.ATruck">
-                  <point x="-41.60000000000002" y="-18.0" />
-                  <point x="575.4384570896473" y="464.0" />
-                  <point x="462.83845708964736" y="464.0" />
-                  <point x="26.5" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Interfaces.ICarTransport" target="bigPackage.models.AbstractModels.ACar">
-                  <point x="37.5" y="-18.0" />
-                  <point x="269.83845708964736" y="464.0" />
-                  <point x="289.7235738688116" y="464.0" />
-                  <point x="289.7235738688116" y="338.0" />
-                  <point x="798.8769186281088" y="338.0" />
-                  <point x="-21.461538461538453" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.Volvo240" target="bigPackage.models.AbstractModels.ACar">
-                  <point x="0.0" y="-18.0" />
-                  <point x="952.3384570896474" y="268.0" />
-                  <point x="841.7999955511857" y="268.0" />
-                  <point x="21.461538461538453" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.CarController" target="bigPackage.Interfaces.ITurbo">
-                  <point x="-54.181818181818244" y="-18.0" />
-                  <point x="841.1774744215218" y="600.0" />
-                  <point x="723.8384570896474" y="600.0" />
-                  <point x="-26.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.Saab95" target="bigPackage.models.AbstractModels.ACar">
-                  <point x="27.5" y="-18.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.FerryMaster420" target="bigPackage.models.AbstractModels.ACar">
-                  <point x="8.100000000000023" y="-18.0" />
-                  <point x="89.10000000000002" y="580.0" />
-                  <point x="113.83845708964736" y="580.0" />
-                  <point x="113.83845708964736" y="308.0" />
-                  <point x="777.4153801665705" y="308.0" />
-                  <point x="-42.923076923076906" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.CarController" target="bigPackage.Implementations.CarController.TimerListener">
-                  <point x="37.25" y="18.0" />
-                  <point x="932.60929260334" y="686.0" />
-                  <point x="1030.10929260334" y="686.0" />
-                  <point x="-18.75" y="-18.0" />
-                </edge>
-                <edge source="bigPackage.models.FerryMaster420" target="bigPackage.Interfaces.IHasFlatbed">
-                  <point x="-8.099999999999966" y="-18.0" />
-                  <point x="72.90000000000003" y="610.0" />
-                  <point x="67.39999999999998" y="610.0" />
-                  <point x="67.39999999999998" y="288.0" />
-                  <point x="627.8384570896474" y="288.0" />
-                  <point x="-56.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.EuroTruck1337" target="bigPackage.Accessories.CargoHold">
-                  <point x="-35.111111111111086" y="-18.0" />
-                  <point x="349.7273459785363" y="590.0" />
-                  <point x="328.83845708964736" y="590.0" />
-                  <point x="328.83845708964736" y="444.0" />
-                  <point x="250.5092881545259" y="444.0" />
-                  <point x="38.28571428571428" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.CarController" target="bigPackage.models.Volvo240">
-                  <point x="13.545454545454504" y="-18.0" />
-                  <point x="908.9047471487945" y="560.0" />
-                  <point x="952.3384570896474" y="560.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.DrawPanel" target="bigPackage.models.AbstractModels.ACar">
-                  <point x="0.0" y="-18.0" />
-                  <point x="1099.8384570896474" y="248.0" />
-                  <point x="848.9538417050319" y="248.0" />
-                  <point x="28.61538461538464" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.CarController" target="bigPackage.Interfaces.IHasFlatbed">
-                  <point x="-27.090909090909122" y="-18.0" />
-                  <point x="868.268383512431" y="580.0" />
-                  <point x="858.3384570896474" y="580.0" />
-                  <point x="858.3384570896474" y="298.0" />
-                  <point x="711.8384570896474" y="298.0" />
-                  <point x="28.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.EuroTruck1337" target="bigPackage.Interfaces.ICarTransport">
-                  <point x="-70.22222222222223" y="-18.0" />
-                  <point x="314.61623486742513" y="610.0" />
-                  <point x="269.83845708964736" y="610.0" />
-                  <point x="37.5" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.Scania" target="bigPackage.Interfaces.IHasFlatbed">
-                  <point x="41.60000000000002" y="-18.0" />
-                  <point x="658.6384570896473" y="464.0" />
-                  <point x="683.8384570896474" y="464.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.CarController" target="bigPackage.models.Saab95">
-                  <point x="-40.636363636363626" y="-18.0" />
-                  <point x="854.7229289669765" y="590.0" />
-                  <point x="792.8384570896474" y="590.0" />
-                  <point x="0.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.CarController.TimerListener" target="bigPackage.Implementations.CarView">
-                  <point x="18.75" y="-18.0" />
-                  <point x="1067.60929260334" y="686.0" />
-                  <point x="1126.7946697482407" y="686.0" />
-                  <point x="1126.7946697482407" y="610.0" />
-                  <point x="1145.8384570896474" y="610.0" />
-                  <point x="46.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Implementations.CarController" target="bigPackage.Implementations.CarView">
-                  <point x="40.636363636363626" y="-18.0" />
-                  <point x="935.9956562397037" y="580.0" />
-                  <point x="1076.8384570896474" y="580.0" />
-                  <point x="-23.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.Accessories.GradualFlatbed" target="bigPackage.Accessories.Flatbed">
-                  <point x="0.0" y="-18.0" />
-                  <point x="591.8384570896474" y="278.0" />
-                  <point x="398.4098856610759" y="278.0" />
-                  <point x="47.571428571428555" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.AbstractModels.ATruck" target="bigPackage.Interfaces.IHasFlatbed">
-                  <point x="-26.5" y="-18.0" />
-                  <point x="409.83845708964736" y="298.0" />
-                  <point x="655.8384570896474" y="298.0" />
-                  <point x="-28.0" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.EuroTruck1337" target="bigPackage.Accessories.Flatbed">
-                  <point x="35.111111111111086" y="-18.0" />
-                  <point x="419.94956820075845" y="550.0" />
-                  <point x="372.83845708964736" y="550.0" />
-                  <point x="372.83845708964736" y="278.0" />
-                  <point x="382.5527428039331" y="278.0" />
-                  <point x="31.714285714285722" y="18.0" />
-                </edge>
-                <edge source="bigPackage.models.EuroTruck1337" target="bigPackage.models.AbstractModels.ATruck">
-                  <point x="52.666666666666686" y="-18.0" />
-                  <point x="437.50512375631405" y="540.0" />
-                  <point x="409.83845708964736" y="540.0" />
-                  <point x="-26.5" y="18.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="1.0" x="65.0" y="215.0" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Inner Classes</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ICarTransport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bigPackage/Interfaces/ICarTransport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="273">
+              <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -559,11 +205,21 @@
       <file leaf-file-name="CarView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bigPackage/Implementations/CarView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="46" column="59" lean-forward="true" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
+            <state relative-caret-position="420">
+              <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Timer.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/Timer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5386">
+              <caret line="436" column="44" lean-forward="false" selection-start-line="436" selection-start-column="39" selection-end-line="436" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -587,6 +243,10 @@
       <find>try</find>
       <find>drawPanel</find>
       <find>ACar</find>
+      <find>fram</find>
+      <find>car</find>
+      <find>delay</find>
+      <find>listener</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -600,7 +260,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/bigPackage/Flatbed.java" />
         <option value="$PROJECT_DIR$/src/bigPackage/CarTransport.java" />
         <option value="$PROJECT_DIR$/src/bigPackage/models/Truck1337.java" />
         <option value="$PROJECT_DIR$/src/bigPackage/MotorisedVehicle.java" />
@@ -647,9 +306,10 @@
         <option value="$PROJECT_DIR$/src/bigPackage/Interfaces/ICarTransport.java" />
         <option value="$PROJECT_DIR$/src/bigPackage/models/FerryMaster420.java" />
         <option value="$PROJECT_DIR$/src/bigPackage/Accessories/CargoHold.java" />
-        <option value="$PROJECT_DIR$/src/bigPackage/Implementations/DrawPanel.java" />
-        <option value="$PROJECT_DIR$/src/bigPackage/Implementations/CarView.java" />
         <option value="$PROJECT_DIR$/src/bigPackage/Interfaces/IHasFlatbed.java" />
+        <option value="$PROJECT_DIR$/src/bigPackage/Implementations/DrawPanel.java" />
+        <option value="$PROJECT_DIR$/src/bigPackage/Implementations/Main.java" />
+        <option value="$PROJECT_DIR$/src/bigPackage/Implementations/CarView.java" />
         <option value="$PROJECT_DIR$/src/bigPackage/Implementations/CarController.java" />
       </list>
     </option>
@@ -661,10 +321,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="406" />
-    <option name="y" value="19" />
-    <option name="width" value="836" />
-    <option name="height" value="1005" />
+    <option name="x" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -1052,7 +711,7 @@
       <workItem from="1510747686153" duration="1062000" />
       <workItem from="1510748871809" duration="601000" />
       <workItem from="1510752983200" duration="21405000" />
-      <workItem from="1511247800671" duration="15692000" />
+      <workItem from="1511247800671" duration="24433000" />
     </task>
     <servers />
   </component>
@@ -1089,7 +748,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79050000" />
+    <option name="totallyTimeSpent" value="87791000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1101,9 +760,9 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22737306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22737306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1134,55 +793,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/bigPackage/Interfaces/IHasFlatbed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="12" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bigPackage/models/CarTransport.java" />
-    <entry file="file://$PROJECT_DIR$/src/bigPackage/models/AbstractModels/ACar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bigPackage/Implementations/Racing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bigPackage/Interfaces/IMovable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bigPackage/models/Volvo240.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <element signature="e#673#674#0" expanded="false" />
-            <element signature="e#732#733#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/bigPackage/models/Saab95.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -1285,6 +900,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
           <caret line="128" column="31" lean-forward="true" selection-start-line="128" selection-start-column="31" selection-end-line="128" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1798,20 +1414,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bigPackage/Implementations/CarView.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/awt/event/ActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="46" column="59" lean-forward="true" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
+        <state relative-caret-position="546">
+          <caret line="49" column="44" lean-forward="false" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/TimerTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-811">
+          <caret line="85" column="14" lean-forward="false" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bigPackage/Implementations/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5386">
+          <caret line="436" column="44" lean-forward="false" selection-start-line="436" selection-start-column="39" selection-end-line="436" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/EventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/event/ChangeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="35" column="47" lean-forward="true" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bigPackage/Implementations/DrawPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bigPackage/Implementations/DrawPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/bigPackage/Implementations/CarView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1289">
-          <caret line="83" column="32" lean-forward="true" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
+        <state relative-caret-position="420">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1820,12 +1484,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bigPackage/Implementations/CarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-727">
-          <caret line="81" column="24" lean-forward="false" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
+        <state relative-caret-position="294">
+          <caret line="53" column="49" lean-forward="true" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1536#1537#0" expanded="true" />
-            <element signature="e#1564#1565#0" expanded="true" />
+            <element signature="e#1809#2080#0" expanded="true" />
+            <element signature="e#2079#2080#0" expanded="true" />
+            <element signature="e#2282#2283#0" expanded="true" />
+            <element signature="e#2336#2337#0" expanded="true" />
+            <element signature="e#2498#2499#0" expanded="true" />
+            <element signature="e#2554#2555#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2759#2760#0" expanded="true" />
+            <element signature="e#2921#2922#0" expanded="true" />
+            <element signature="e#2966#2967#0" expanded="true" />
+            <element signature="e#3130#3131#0" expanded="true" />
+            <element signature="e#3174#3175#0" expanded="true" />
+            <element signature="e#3339#3340#0" expanded="true" />
+            <element signature="e#3384#3385#0" expanded="true" />
+            <element signature="e#3548#3549#0" expanded="true" />
+            <element signature="e#3594#3595#0" expanded="true" />
+            <element signature="e#3759#3760#0" expanded="true" />
+            <element signature="e#3805#3806#0" expanded="true" />
+            <element signature="e#3862#3863#0" expanded="true" />
+            <element signature="e#3890#3891#0" expanded="true" />
+            <element signature="e#4611#4676#0" expanded="false" />
           </folding>
         </state>
       </provider>

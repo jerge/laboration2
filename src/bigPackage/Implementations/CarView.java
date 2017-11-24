@@ -1,12 +1,15 @@
 package bigPackage.Implementations;
 
 
+import bigPackage.models.AbstractModels.ACar;
+
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
 
 /**
  * This class represents the full view of the MVC pattern of your car simulator.
@@ -27,25 +30,23 @@ public class CarView extends JFrame {
 
     private JPanel controlPanel = new JPanel();
     private JPanel gasPanel = new JPanel();
-    private JSpinner gasSpinner = new JSpinner();
-    private int gasAmount = 0;
-    private JLabel gasLabel = new JLabel( "Gas amount (%)" );
-
-    private JButton gasButton = new JButton( "Gas" );
-    private JButton brakeButton = new JButton( "Brake" );
-    private JButton turboOnButton = new JButton( "Saab Turbo on" );
-    private JButton turboOffButton = new JButton( "Saab Turbo off" );
-    private JButton liftBedButton = new JButton( "Scania Lift Bed" );
-    private JButton lowerBedButton = new JButton( "Lower Lift Bed" );
-
-    private JButton startButton = new JButton( "Start all ACars" );
-    private JButton stopButton = new JButton( "Stop all ACars" );
+    JSpinner gasSpinner = new JSpinner();
+    int gasAmount = 0;
+    JLabel gasLabel = new JLabel( "Gas amount (%)" );
+    JButton gasButton = new JButton( "Gas" );
+    JButton brakeButton = new JButton( "Brake" );
+    JButton turboOnButton = new JButton( "Saab Turbo on" );
+    JButton turboOffButton = new JButton( "Saab Turbo off" );
+    JButton liftBedButton = new JButton( "Scania Lift Bed" );
+    JButton lowerBedButton = new JButton( "Lower Lift Bed" );
+    JButton startButton = new JButton( "Start all ACars" );
+    JButton stopButton = new JButton( "Stop all ACars" );
 
     // Constructor
-    public CarView( String framename, CarController cc ) {
+    public CarView( String framename, CarController cc, List<ACar> carList ) {
         this.carC = cc;
-        drawPanel = new DrawPanel( ( X ), Y - 240, cc.getCarList() );
-        initComponents( framename );
+        drawPanel = new DrawPanel( ( X ), Y - 240, carList );
+        initComponents( framename, cc );
     }
 
     public static int getMaxX() {
@@ -58,7 +59,7 @@ public class CarView extends JFrame {
 
     // Sets everything in place and fits everything
     // TODO: Take a good look and make sure you understand how these methods and components work
-    private void initComponents( String title ) {
+    private void initComponents( String title, CarController cc ) {
 
         this.setTitle( title );
         this.setPreferredSize( new Dimension( X, Y ) );
@@ -111,55 +112,7 @@ public class CarView extends JFrame {
 
         // This actionListener is for the gas button only
         // TODO: Create more for each component as necessary
-        gasButton.addActionListener( new ActionListener() {
-            @Override
-            public void actionPerformed( ActionEvent e ) {
-                carC.gas( gasAmount );
-            }
-        } );
 
-        brakeButton.addActionListener( new ActionListener() {
-            @Override
-            public void actionPerformed( ActionEvent e ) {
-                carC.brake( gasAmount );
-            }
-        } );
-        stopButton.addActionListener( new ActionListener() {
-            @Override
-            public void actionPerformed( ActionEvent e ) {
-                carC.stopEngine();
-            }
-        } );
-        startButton.addActionListener( new ActionListener() {
-            @Override
-            public void actionPerformed( ActionEvent e ) {
-                carC.startEngine();
-            }
-        } );
-        turboOnButton.addActionListener( new ActionListener() {
-            @Override
-            public void actionPerformed( ActionEvent e ) {
-                carC.setTurboOn();
-            }
-        } );
-        turboOffButton.addActionListener( new ActionListener() {
-            @Override
-            public void actionPerformed( ActionEvent e ) {
-                carC.setTurboOff();
-            }
-        } );
-        liftBedButton.addActionListener( new ActionListener() {
-            @Override
-            public void actionPerformed( ActionEvent e ) {
-                carC.raiseFlatbed();
-            }
-        } );
-        lowerBedButton.addActionListener( new ActionListener() {
-            @Override
-            public void actionPerformed( ActionEvent e ) {
-                carC.lowerFlatbed();
-            }
-        } );
         // Make the frame pack all it's components by respecting the sizes if possible.
         this.pack();
 
